@@ -7,7 +7,7 @@ html {
     font-size: 1.2 rem;
     height: 100%;
     text-align: justify;
-    background-image: url("img/FONDOWEB.jpg");
+    background-image: url("IMG/FONDOWEB.jpg");
 
 }
 
@@ -113,6 +113,39 @@ h6 {
     margin: 1.5rem;
 }
 */
+.Seccion1 {
+
+    min-height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.fondo {
+    background-color: #f0f0f0;
+}
+
+.Seccion1 article {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+    min-height: 20px;
+
+}
+
+.Seccion1 article div {
+    margin: 1.5rem;
+    min-height: 20px;
+
+}
+
+.Seccion1 article div img {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+
+}
+
 .Seccion2 {
     text-align: center;
     min-height: 50px;
@@ -125,17 +158,14 @@ h6 {
     /* border: 2px purple solid; */
     margin: 1.5rem;
     min-height: 20px;
-
 }
 
-.fondo {
-    background-color: #f0f0f0;
+.Seccion2 article h3 {
+    font-size: 30px;
 }
-.Seccion1 article div {
-    /* border: 2px purple solid; */
-    margin: 1.5rem;
-    min-height: 20px;
 
+.Seccion2 article p {
+    font-size: 22px;
 }
 
 h4 {
@@ -261,7 +291,7 @@ h4 {
     margin-inline-end: 0px;
 }
 
-.link-derecha{
+.link-derecha {
     display: block;
     width: 98%;
     text-align: right;
@@ -430,7 +460,7 @@ footer {
     align-items: center;
 }
 
-.footer-row p{
+.footer-row p {
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
     font-size: 15px;
@@ -456,10 +486,20 @@ footer {
     font-size: 22px;
     margin-right: 10%;
     margin-left: 10%;
+    align-items: center;
 }
 
 .inicio h3 {
     font-size: 30px;
+}
+
+#imagenGato img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 
@@ -484,6 +524,7 @@ footer {
         font-size: 18px;
         margin: 0 15px;
     }
+
     .footer-top {
         display: flex;
         flex-wrap: wrap;
@@ -504,7 +545,7 @@ footer {
     }
 
     .titulo {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     header {
@@ -514,7 +555,7 @@ footer {
     }
 
     .nav-size {
-        font-size: 15px;
+        font-size: 0.95rem;
         margin: 0 5px;
     }
 
@@ -525,6 +566,7 @@ footer {
     .menu-cont {
         font-size: 10px;
     }
+
     .carrusel-fotos {
         overflow: hidden;
     }
@@ -543,10 +585,11 @@ footer {
         width: 50px;
         height: 40px;
     }
+
     .footer-top {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
         background-color: #dedbdb;
         padding: 0px 20px 0px;
@@ -573,4 +616,3 @@ footer {
         border-radius: 50%;
     }
 }
-

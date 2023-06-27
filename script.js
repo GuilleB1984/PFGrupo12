@@ -20,7 +20,7 @@ function validarFormulario(evento) {
   evento.preventDefault();
   var nombre = document.getElementById('nombre').value;
   if(nombre.length == 0) {
-    alert('No has escrito nada en el nombre');
+    alert('Por favor ingresa tu nombre');
     return;
   }
   var email = document.getElementById('email').value;
@@ -40,3 +40,24 @@ function validarFormulario(evento) {
 
   this.submit();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const imagenGatoContainer = document.getElementById('imagenGato');
+
+  function fetchImagenGato() {
+    fetch('https://api.thecatapi.com/v1/images/search')
+      .then(response => response.json())
+      .then(data => {
+        const imageUrl = data[0].url;
+        const imageElement = document.createElement('img');
+        imageElement.src = imageUrl;
+        imagenGatoContainer.appendChild(imageElement);
+      })
+      .catch(error => {
+        console.log('Error al obtener la imagen del gato:', error);
+      });
+  }
+
+  // Obtener una imagen al cargar la página
+  fetchImagenGato();
+});
