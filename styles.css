@@ -21,7 +21,7 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 140px 90px 40px;
+    grid-template-rows: 140px 90px 20px 40px ;
     height: fit-content;
     align-items: center;
 }
@@ -234,6 +234,18 @@ h4 {
 }
 
 
+.header-carrito{
+    padding: 5px 10px;
+    height: fit-content;
+    width: fit-content;
+    text-align: right;
+}
+
+.izquierda{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
 
 .header-menubar ul {
     list-style: none;
