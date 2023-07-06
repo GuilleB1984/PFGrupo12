@@ -419,6 +419,8 @@ button:hover {
     margin: 10px;
 }
 
+
+
 .nav-size {
     font-size: 21px;
     margin: 0 20px;
@@ -514,6 +516,71 @@ footer {
     margin: 10px;
 }
 
+
+
+/* formato del carrito*/
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    /*background-color: white;*/
+    border: 1pxsolidlightslategray;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    
+}
+
+.bordes-carrito {
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.button-carrito {
+    padding: 8px;
+    margin:4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+th{
+    margin: 3px;
+    padding: 10px;
+}
+
+.carrito{
+    display: flex;
+    flex-direction: column;
+  height: 100%; /* Ajusta la altura del contenedor al tamaño del padre */
+}
+
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.row {
+    flex: 1; /* Permite que cada fila ocupe el espacio disponible verticalmente */
+    display: flex;
+    margin-bottom: 10px; /* Añade un espacio de 10px entre las filas */
+  }
+
+  
+  a {
+    text-decoration: none;
+  }
+
+  .pad-gestion{
+padding: 10px;
+  }
 
 /* Estilos para tablet */
 @media (min-width: 430px) and (max-width: 757px) {

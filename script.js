@@ -61,3 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Obtener una imagen al cargar la página
   fetchImagenGato();
 });
+
